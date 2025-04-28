@@ -1,3 +1,3 @@
 # deeplearning
 
-# This is my first repo for University activities
+# Projects that was made by University activities

@@ -34,8 +34,6 @@ class DecoderRNN(nn.Module):
         inputs = torch.cat((features.unsqueeze(1), embeddings), dim=1)
         lstm_out, states = self.lstm(inputs, states)
 
-
-
         lstm_out = lstm_out.reshape(-1, self.hidden_size)
         outputs = self.linear(lstm_out)
         return outputs, states
